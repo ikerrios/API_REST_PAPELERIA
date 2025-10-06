@@ -1,5 +1,5 @@
 <?php
-    $url = "https://localhost:8080/" //terminar esta línea.
+    $url = "https://localhost:8080/articulos" //terminar esta línea.
     $data = file_get_contents($url);
     $articulos = json_decode($data, true);
 
