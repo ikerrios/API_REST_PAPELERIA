@@ -1,8 +1,7 @@
 <?php
-    $url = "https://localhost:8080/" //terminar esta línea.
+    $url = "http://localhost:8080/articulos/list";
     $data = file_get_contents($url);
     $articulos = json_decode($data, true);
-
     //var_dump($articulos)
 ?>
 <html>
@@ -12,15 +11,27 @@
     </head>
     <body>
         <table class="table table-striped">
-                <thead>
+            <thead>
                 <h1>Listado de artículos</h1>
+                <tr>
+                    <td>ID</td>
+                    <td>name</td>
+                    <td>price</td>
+                    <td>stock</td>
+                    <td>category</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($articulos as $articulos): ?>
                     <tr>
-                        <td>ID</td>
-                        <td>name</td>
-                        <td>chip</td>
-                        <td>category</td>
-                        <td>born</td>
-                        <td>adopt</td>
+                        <td><?php echo $articulos['id'] ?></td>
+                        <td><?php echo $articulos['name'] ?></td>
+                        <td><?php echo $articulos ['price'] ?></td>
+                        <td><?php echo $articulos ['stock'] ?></td>
+                        <td><?php echo $articulos ['category'] ?></td>
                     </tr>
-                </thead>
-                <!--Continuar--> 
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </body> 
+</html>
