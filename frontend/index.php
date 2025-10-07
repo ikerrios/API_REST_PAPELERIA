@@ -27,7 +27,11 @@
                         <td><?php echo $articulos['id'] ?></td>
                         <td><?php echo $articulos['name'] ?></td>
                         <td><?php echo $articulos ['price'] ?></td>
-                        <td><?php echo $articulos ['stock'] ?></td>
+                        <td><?php if($articulos ['stock'] <= 0) {
+                        echo "producto agotado";
+                        } else {
+                            echo $articulos['stock'];
+                        }?>
                         <td><?php echo $articulos ['category'] ?></td>
                     </tr>
                 <?php endforeach; ?>

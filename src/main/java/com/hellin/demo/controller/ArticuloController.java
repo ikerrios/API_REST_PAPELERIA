@@ -32,7 +32,7 @@ import com.hellin.demo.entity.Articulo;
     *  Este método devuelve el listado de Articulos
     * @return List<Articulo> Información de cada articulo.
      */
-    @GetMapping("/list")
+    @GetMapping("/articulos/{id}")
     public List<Articulo> Listaarticulos(){
         return articulorepository.findAll();
     }
