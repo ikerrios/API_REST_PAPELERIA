@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
-public class Papeleria {
+public class Articulo {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
