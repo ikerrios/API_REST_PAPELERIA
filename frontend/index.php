@@ -22,13 +22,13 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($articulos as $articulos): ?>
+                <?php foreach($articulos as $articulo): ?>
                     <tr>
-                        <td><?php echo $articulos['id'] ?></td>
-                        <td><?php echo $articulos['name'] ?></td>
-                        <td><?php echo $articulos ['price'] ?></td>
-                        <td><?php echo $articulos ['stock'] ?></td>
-                        <td><?php echo $articulos ['category'] ?></td>
+                        <td><?php echo $articulo['id'] ?></td>
+                        <td><?php echo $articulo['name'] ?></td>
+                        <td><?php echo $articulo ['price'] ?></td>
+                        <td><?php echo $articulo ['stock'] ?></td>
+                        <td><?php echo $articulo ['category'] ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

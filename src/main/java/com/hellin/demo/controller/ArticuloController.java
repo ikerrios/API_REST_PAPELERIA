@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hellin.demo.repository.ArticuloRepository;
 import com.hellin.demo.entity.Articulo;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
-@RequestMapping("/api/articulos")
+@RequestMapping("/api")
  /**
  * En este controlador se exponen todos los endpoints referentes a Articulos {{@link name}}
  * @version 1.0
@@ -37,6 +39,12 @@ import com.hellin.demo.entity.Articulo;
     *  Este método devuelve el listado de Articulos
     * @return List<Articulo> Información de cada articulo.
      */
+    
+     @GetMapping("/articulos")
+    public List<Articulo> getAllArticles() {
+        return articulorepository.findAll();
+    }
+    
 
     @GetMapping("/{id}/basico")
     public ResponseEntity<Map<String, Object>> obtenerArticuloBasico(@PathVariable Integer id) {
