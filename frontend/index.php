@@ -1,5 +1,5 @@
 <?php
-    $url = "http://localhost:8080/articulos/list";
+    $url = "http://localhost:8080/api/articulos";
     $data = file_get_contents($url);
     $articulos = json_decode($data, true);
     //var_dump($articulos)
