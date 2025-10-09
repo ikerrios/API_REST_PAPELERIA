@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.hellin.demo.entity","l":"Articulo"},{"p":"com.hellin.demo.controller","l":"ArticuloController"},{"p":"com.hellin.demo.repository","l":"ArticuloRepository"},{"p":"com.hellin.demo","l":"PapeleriaApplication"}];updateSearchResults();

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.hellin.demo"},{"l":"com.hellin.demo.controller"},{"l":"com.hellin.demo.entity"},{"l":"com.hellin.demo.repository"}];updateSearchResults();
